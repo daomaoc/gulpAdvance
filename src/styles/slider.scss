@@ -1,0 +1,143 @@
+.swiper-container{
+	margin: 0 auto;
+	.swiper-wrapper{
+		.swiper-slide{
+			font-family: "微软雅黑";
+			.btn{
+				background: yellowgreen;
+				border:0;
+				border-radius: 3px;
+			}
+		}
+		.slide1{
+			display: flex;
+			.one{
+				width: 100%;
+				height: 100%;
+				background: url(../images/true2.jpg) no-repeat left top;
+				background-size: 100% 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				align-items: center;
+				.name{
+					color:#111;
+					display: flex;
+					flex: 1;
+					justify-content: center;
+					align-items: center;
+					font-size: 40px;
+				}
+				.myresume{
+					font-size: 40px;
+					color: #ccc;
+					font-weight: 600;
+					display: flex;
+					flex: 1;
+					justify-content: center;
+					align-items: center;
+					width: 50%;
+					background: url(../images/true.jpg) no-repeat left top;
+					border-radius: 10px;
+				}
+				.zhanwei{
+					display: flex;
+					flex: 1;
+				}
+			}
+		}
+		.slide2{
+			display: flex;
+			.two{
+				width: 100%;
+				height: 100%;
+				background: url(../images/true1.jpg) no-repeat left top;
+				background-size: 100% 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				align-items: center;
+				.twotop{
+					display: flex;
+					flex: 3;
+					width: 35%;
+					justify-content: center;
+					align-items: center;
+					.photo{
+						width:100%;
+						border: 1px solid #ccc;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-top: 2px solid #ccc;
+						border-bottom: 2px solid #ccc;
+						border-left: 2px dashed #ccc;
+						border-right: 2px dashed #ccc;
+						border-radius: 50%;
+						animation: zhuan 3s linear infinite;
+						.pic{
+							width:90%;
+							height: 90%;
+							background: url(../images/photo.jpg) no-repeat center;
+							border-radius: 50%;
+							animation: fanzhuan 3s linear infinite;
+						}
+						@keyframes zhuan{
+							from{transform: rotate(0deg);}
+							to{transform: rotate(360deg);}
+						}
+						@keyframes fanzhuan{
+							from{transform: rotate(0deg);}
+							to{transform: rotate(-360deg);}
+						}
+					}
+				}
+				.twobottom{
+					display: flex;
+					flex: 6;
+					width: 100%;
+					flex-flow: column nowrap;
+					justify-content: flex-start;
+					align-items: center;
+					.line{
+						width: 80%;
+						height: 10%;
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-between;
+						align-items: center;
+						.dian{
+							display: inline-flex;
+							width:3%;
+							background: #ccc;
+							border-radius: 50%;
+						}
+						.xian{
+							width: 92%;
+							height: 0;
+							border-top: 1px solid #ccc;
+						}
+					}
+					.zhiye{
+						color: #ccc;
+						font-size: 30px;
+						font-weight: 900;
+					}
+				}
+			}
+		}
+		.slide3{
+			display: flex;
+			.three{
+				width: 100%;
+				height: 100%;
+				background: url(../images/true3.jpg) no-repeat center;
+				background-size: 100% 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
